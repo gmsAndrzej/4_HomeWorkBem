@@ -1,0 +1,326 @@
+html {
+
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+
+
+    box-sizing: inherit;
+}
+
+
+
+header, section, footer, aside, nav, article, figure, figcaption {
+    display: block;
+}
+
+
+body {
+
+
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image: url("../src/rezystory11.png");
+    background-position: center;
+    font-family: "Lato", sans-serif;
+    line-height: 1.4em;
+    margin: 0px;
+}
+
+.dark {
+
+    color: #eee;
+    background: #222;
+
+
+}
+
+.button {
+
+    color: #9b9494;
+    margin-left: 300px;
+}
+
+main {
+    padding: 20px;
+    width: 940px;
+    margin: 0px auto 0px auto;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: #efefef;
+}
+
+header {
+
+    padding-right: 20px;
+    margin: 0px auto 0px auto;
+    width: 940px;
+    height: 160px;
+    border: 1px solid white;
+    background-image: url("../src/rezystory2.png");
+}
+
+h1 {
+
+    text-indent: 350px;
+    font-size: 50px;
+    color: #eee;
+    padding-top: 50px;
+    text-shadow: 3px 3px 8px #504d4d;
+}
+
+nav {
+
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-right: 20px;
+    margin: 0px auto 0px auto;
+    width: 940px;
+    color: #ffffff;
+    background-color: #aeaca8;
+    height: 30px;
+}
+
+nav ul {
+    margin: 0px auto 0px auto;
+    padding: 5px 0px 5px 30px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav li a {
+    color: #ffffff;
+}
+
+nav li a:hover, nav li a.current {
+    color: #000000;
+}
+
+.tableContainer {
+    float: left;
+
+
+    color: rgb(13, 13, 14);
+}
+
+.captionTable {
+
+    caption-side: top;
+    text-align: auto;
+    margin-top: 30px 30px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tableCell {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.tableCellSilver {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #C0C0C0;
+}
+
+
+.tableCellGold {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFD700;
+}
+
+.tableCellBlack {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #000000;
+
+}
+
+.tableCellBrown {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #A52A2A;
+}
+
+.tableCellRed {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF0000;
+}
+
+.tableCellOrange {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFA500;
+}
+
+.tableCellYellow {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFF00;
+}
+
+.tableCellGreen {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #008000;
+}
+
+.tableCellBlue {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0000FF;
+}
+
+.tableCellViolet {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EE82EE;
+}
+
+.tableCellGrey {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #808080;
+}
+
+.tableCellWhite {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
+
+.table {
+    float: left;
+    border-collapse: collapse;
+    width: 100%;
+    outline: 1px solid #270101;
+    text-shadow: 10px #666666;
+
+}
+
+.tableRow:nth-child(even) {
+
+    background-color: #eee;
+
+}
+
+.tableRow:hover {
+
+    background-color: #ddd;
+}
+
+
+article.function {
+
+    text-align: justify;
+    padding-bottom: 10px;
+    line-height: 1.5;
+
+}
+
+article.action {
+
+    text-align: justify;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+article.ExamplePictureOne {
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+
+}
+
+article.ExamplePictureTwo {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+
+
+}
+
+article.types {
+    clear: both;
+    text-align: justify;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 10px 0px 5px 0px;
+    padding: 0px;
+}
+
+h4 {
+    margin: 0px 0px 10px 0px;
+    color: black;
+    font-size: 18px;
+    text-shadow: 1px 1px 4px #383636;
+
+
+}
+
+
+footer {
+
+    clear: both;
+    margin: 0px auto 0px auto;
+    width: 940px;
+    font-size: 80%;
+    border: solid 1px white;
+    background-color: #E0e0e0;
+    text-shadow: 1px 1px 4px #383636;
+
+}

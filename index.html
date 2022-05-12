@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezystor definicja</title>
+    <link href="CSS/style.css" rel="stylesheet">
+    <script defer src="JS/script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="body">
+    <header>
+        <h1>Rezystor</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="" class="current">Strona główna</a></li>
+            <li><a href="#function">Funkcja</a></li>
+            <li><a href="#action">Działanie</a></li>
+            <li><a href="#ExampleTable">Przykład</a></li>
+            <li><a href="#types">Rodzaje</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <article class="function" id="function">
+            <h4>Funkcja</h4>
+            <p>Rezystor jest jednym z podstawowych elementów elektronicznych.
+                Jego zadaniem jest hamowanie przepływu prądu
+                i obniżanie napięcia w obwodzie elektrycznym. Jego zasadnicza
+                część jest zbudowana z materiału o małej przewodności
+                elektrycznej, a z obwodem zewnętrznym łączy się za
+                pośrednictwem dwóch dobrze przewodzących wyprowadzeń.
+                Rezystancja, czyli opór stawiany prądowi, jest wyrażana
+                w omach, oznaczanych w skrócie grecką literą omega (Ω).
+                Najczęstsze zastosowania rezystora to: ograniczenie szybkości
+                ładowania kondensatora; ustalanie warunków pracy
+                elementów półprzewodnikowych, na przykład tranzystora
+                bipolarnego; zabezpieczanie LED-ów przed zbyt dużym
+                prądem; ustalanie lub ograniczanie częstotliwości w obwodach
+                fonii (w połączeniu z innymi elementami); podciąganie
+                lub ściąganie napięcia na wejściu cyfrowego układu scalonego;
+                ustalanie napięcia w określonym punkcie obwodu.
+                W ostatnim z wymienionych zastosowań często występują
+                dwa rezystory tworzące tzw. dzielnik napięcia.
+
+            </p>
+        </article>
+
+        <article class="action" id="action">
+            <h4>Działanie</h4>
+            <p>Hamowanie przepływu prądu i obniżanie napięcia przez
+                rezystor wiąże się ze zamianą energii elektrycznej na cieplną.
+                W nowoczesnych układach elektronicznych przemiana
+                jednej energii w drugą zachodzi z mocą rzadko przekraczającą
+                1 W.
+                Jeśli przez R oznaczymy rezystancję wyrażoną w omach (Ω),
+                przez I — natężenie prądu w amperach (A), a przez U — napięcie
+                na rezystorze (różnicę potencjału między końcówkami
+                rezystora) w woltach (V), to zgodnie z prawem Ohma:
+                R = U / I
+                Innymi słowy, jeśli przez rezystor o wartości 1 Ω popłynie
+                prąd o natężeniu 1 A, to napięcie między jego końcówkami
+                wyniesie 1 V.
+                Jeśli przez P oznaczymy moc w watach (W), z jaką energia
+                elektryczna zamienia się w rezystorze na energię cieplną, to
+                dla prądu stałego możemy zapisać następującą zależność:
+                P = U * I
+                Po podstawieniu prawa Ohma otrzymujemy zależność między
+                mocą a prądem i rezystancją:
+                P = I2 * R
+                Można też uzależnić moc od napięcia i rezystancji:
+                P = U2 / R
+                Te dwa alternatywne wzory przydają się, gdy trzeba obliczyć
+                moc, a nieznane jest napięcie na rezystorze lub natężenie
+                płynącego przez niego prądu.
+                Te same zależności obowiązują dla prądu przemiennego,
+                choć ich interpretacja jest nieco bardziej subtelna.
+
+            </p>
+
+        </article>
+
+
+        <article class="ExampleTable" id="ExampleTable">
+            <h4>Przykład oznaczania rezystorów</h4>
+
+            <table class="table">
+                <caption class="captionTable">
+                    Tabela oznaczenie kodów paskowych rezystorów
+                </caption>
+
+
+                <tr class="tableRow">
+                    <th class="tableCell tableHeader" scope="col">Kolor</th>
+                    <th class="tableCell tableHeader" scope="col">Cyfra</th>
+                    <th class="tableCell tableHeader" scope="col">Mnożnik</th>
+                    <th class="tableCell tableHeader" scope="col">Tolerancja</th>
+                    <th class="tableCell tableHeader" scope="col">TWR</th>
+
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellSilver tableHeader" scope="row">srebny</th>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">10<SUP>-2</SUP></td>
+                    <td class="tableCell">10%</td>
+                    <td class="tableCell">-</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellGold tableHeader" scope="row">złoty</th>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">10<SUP>-1</SUP></td>
+                    <td class="tableCell">5%</td>
+                    <td class="tableCell">-</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellBlack tableHeader" scope="row" style="color: #FFFFFF">czarny</th>
+                    <td class="tableCell">0</td>
+                    <td class="tableCell">1</td>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">250ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellBrown tableHeader" scope="row">brązowy</th>
+                    <td class="tableCell">1</td>
+                    <td class="tableCell">10</td>
+                    <td class="tableCell">1%</td>
+                    <td class="tableCell">100ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellRed tableHeader" scope="row">czerwony</th>
+                    <td class="tableCell">2</td>
+                    <td class="tableCell">10 <SUP>2</SUP></td>
+                    <td class="tableCell">2%</td>
+                    <td class="tableCell">50ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellOrange tableHeader" scope="row">pomarańczowy</th>
+                    <td class="tableCell">3</td>
+                    <td class="tableCell">10 <SUP>3</SUP></td>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">15ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellYellow tableHeader" scope="row">żółty</th>
+                    <td class="tableCell">4</td>
+                    <td class="tableCell">10 <SUP>4</SUP></td>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">25ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellGreen tableHeader" scope="row">zielony</th>
+                    <td class="tableCell">5</td>
+                    <td class="tableCell">10 <SUP>5</SUP></td>
+                    <td class="tableCell">0,5%</td>
+                    <td class="tableCell">20ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellBlue tableHeader" scope="row">niebieski</th>
+                    <td class="tableCell">6</td>
+                    <td class="tableCell">10 <SUP>6</SUP></td>
+                    <td class="tableCell">0,25%</td>
+                    <td class="tableCell">10ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellViolet tableHeader" scope="row">fioletowy</th>
+                    <td class="tableCell">7</td>
+                    <td class="tableCell">10 <SUP>7</SUP></td>
+                    <td class="tableCell">0,1%</td>
+                    <td class="tableCell">5ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellGrey tableHeader" scope="row">szary</th>
+                    <td class="tableCell">8</td>
+                    <td class="tableCell">10 <SUP>8</SUP></td>
+                    <td class="tableCell">0,05%</td>
+                    <td class="tableCell">1ppm</td>
+                </tr>
+
+                <tr class="tableRow">
+                    <th class="tableCellWhite tableHeader" scope="row">biały</th>
+                    <td class="tableCell">9</td>
+                    <td class="tableCell">10 <SUP>9</SUP></td>
+                    <td class="tableCell">-</td>
+                    <td class="tableCell">-</td>
+                </tr>
+
+            </table>
+
+        </article>
+
+        <article class="ExamplePictureOne" id="ExamplePictureOne">
+            <h4>Cztery paski: 12 &ohm; 10% </h4>
+            <img src="src/rezkod44.png" alt="kod 4paski">
+        </article>
+
+        <article class="ExamplePictureTwo" id="ExamplePictureTwo">
+            <h4>Sześć pasków: 120k &ohm; 1% 250ppm </h4>
+            <img src="src/rezkod66.png" alt="kod 6paski">
+        </article>
+        <article class="types" id="types">
+
+            <h4>Rodzaje </h4>
+            <ul>
+
+
+                <li><strong>Rezystory osiowe</strong> mają wyprowadzenia po przeciwnych stronach
+                    zazwyczaj cylindrycznego korpusu. Rezystory radialne
+                    mają wyprowadzenia po jednej stronie korpusu. Te drugie
+                    są rzadko spotykane.</li>
+                <li><strong>Rezystory precyzyjne</strong> charakteryzują się tolerancją nieprzekraczającą
+                    ±1%.</li>
+                <li><strong>Rezystory ogólnego przeznaczenia</strong> są mniej precyzyjne i niezbyt
+                    stabilne.</li>
+
+
+                <li><strong>Rezystory mocy</strong> są stosowane głównie w zasilaczach i wzmacniaczach,
+                    a ich moc znamionowa wynosi co najmniej 1 W.
+                    Są stosunkowo duże i często wymagają zamontowania radiatora
+                    lub wentylatora.</li>
+                <li><strong>Rezystory drutowe</strong> są stosowane w układach wydzielających
+                    dużo ciepła. Najczęściej są zbudowane z dielektrycznego
+                    korpusu (rdzenia), który może być cylindryczny lub płaski,
+                    i nawiniętego na nim drutu oporowego. Drut jest zazwyczaj
+                    wykonany ze stopu niklowo-chromowego (zwanego nichromem)
+                    i ma powłokę ochronną.</li>
+                <li><strong> Rezystory grubowarstwowe</strong> mają postać płytek lub prostopadłościennych
+                    kostek.</li>
+
+
+                <li><strong> Rezystory montowane powierzchniowo (SMD)</strong> zazwyczaj
+                    składają się z nadruku oporowego naniesionego na płytkę
+                    ceramiczną o dużej zawartości tlenku aluminium. Często ich
+                    długość wynosi 6 mm (seria rozmiarowa o numerze 2512).
+                    Każdy rezystor SMD ma dwa niklowane zakończenia pokryte
+                    lutowiem roztapianym podczas montażu rezystora na płytce
+                    drukowanej. Górna powierzchnia jest zabezpieczana cienką
+                    warstwą żywicy epoksydowej.</li>
+
+            </ul>
+
+
+        </article>
+
+    </main>
+    <footer>
+        &copy; Gms 2022
+        <button class="button">Włącz ciemnny motyw</button>
+    </footer>
+
+</body>
+
+</html>
