@@ -11,7 +11,7 @@ html {
 
 
 
-header, section, footer, aside, nav, article, figure, figcaption ,h1 {
+header, section, footer, aside, nav, article {
     display: block;
 }
 
@@ -63,37 +63,15 @@ header, section, footer, aside, nav, article, figure, figcaption ,h1 {
     background-image: url("../src/rezystory2.png");
 }
 
-h1 {
-   
-   float: right;
+.header__description {
+
+
     max-width: 200px;
     font-size: 50px;
     color: #eee;
-    margin: 10px 10px;
-    padding: 0 auto 0 auto; 
-    text-shadow: 3px 3px 8px #504d4d;
-}
-
-
-
-
-
-
-
-   
-
-
-h2 {
-    margin: 10px 0px 5px 0px;
-    padding: 0px;
-}
-
-h4 {
-    margin: 0px 0px 10px 0px;
-    color: black;
-    font-size: 18px;
-    text-shadow: 1px 1px 4px #383636;
-
+    margin: 50px 50px 50px 300px;
+    padding: 0 auto 0 auto;
+    text-shadow: 5px 5px 30px #383636;
 
 }
 

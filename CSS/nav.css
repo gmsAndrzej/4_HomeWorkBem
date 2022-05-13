@@ -22,7 +22,7 @@
 }
 
 .navigation__link {
-    color: #b8a9e4;
+    color: rgb(7, 7, 136);
 }
 
 .navigation__link:hover, .navigation__link--current {
