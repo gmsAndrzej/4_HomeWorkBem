@@ -1,0 +1,49 @@
+.article{
+
+    max-width: 940px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #ccc;
+    margin: 20px auto;
+    text-align: justify;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    clear: both;
+    
+}
+
+.article__header{
+
+color : rgb(3, 41, 41);
+
+
+}
+
+.article__paragraph{
+
+color: rgb(82, 78, 78);
+
+
+}
+
+
+
+
+
+
+.article__imageFourCode {
+    margin-left: 50px;
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+
+}
+
+.article__imageSixCode {
+  float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    text-align: center;
+
+
+}
+ 

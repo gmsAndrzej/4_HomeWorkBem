@@ -1,0 +1,152 @@
+
+
+.table__captionTable {
+
+    caption-side: top;
+    text-align: auto;
+    margin-top: 30px 30px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.table__tableCell {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.table__tableCellSilver {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #C0C0C0;
+}
+
+
+.table__tableCellGold {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFD700;
+}
+
+.table__tableCellBlack {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #000000;
+
+}
+
+.table__tableCellBrown {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #A52A2A;
+}
+
+.table__tableCellRed {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FF0000;
+}
+
+.table__tableCellOrange {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFA500;
+}
+
+.table__tableCellYellow {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFF00;
+}
+
+.table__tableCellGreen {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #008000;
+}
+
+.table__tableCellBlue {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0000FF;
+}
+
+.table__tableCellViolet {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EE82EE;
+}
+
+.table__tableCellGrey {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #808080;
+}
+
+.table__tableCellWhite {
+
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
+
+.table {
+    float: left;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 940;
+    outline: 1px solid #3d3b3b;
+    text-shadow: 10px #666666;
+
+}
+
+.table__tableRow:nth-child(even) {
+
+    background-color: #eee;
+
+}
+
+.table__tableRow:hover {
+
+    background-color: #ddd;
+}
+

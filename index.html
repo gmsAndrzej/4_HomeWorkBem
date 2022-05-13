@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezystor definicja</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/article.css" rel="stylesheet">
+    <link href="CSS/table.css" rel="stylesheet">
+    <link href="CSS/nav.css" rel="stylesheet">
     <script defer src="JS/script.js"> </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,24 +22,26 @@
 </head>
 
 <body class="body">
-    <header>
+    <header class="header">
         <h1>Rezystor</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="" class="current">Strona główna</a></li>
-            <li><a href="#function">Funkcja</a></li>
-            <li><a href="#action">Działanie</a></li>
-            <li><a href="#ExampleTable">Przykład</a></li>
-            <li><a href="#types">Rodzaje</a></li>
+    <nav class="navigation">
+        <ul class="navigation__Ulist">
+            <li class="navigation__list"><a class="navigation__link navigation__link--current  " href="">Strona
+                    główna</a></li>
+            <li class="navigation__list"><a class="navigation__link " href="#function">Funkcja</a></li>
+            <li class="navigation__list"><a class="navigation__link " href="#action">Działanie</a></li>
+            <li class="navigation__list"><a class="navigation__link " href="#ExampleTable">Przykład</a></li>
+            <li class="navigation__list"><a class="navigation__link " href="#types">Rodzaje</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="main">
 
-        <article class="function" id="function">
-            <h4>Funkcja</h4>
-            <p>Rezystor jest jednym z podstawowych elementów elektronicznych.
+        <article class=" article" id="function">
+
+            <h4 class="article__header">Funkcja</h4>
+            <p class="article__paragraph">Rezystor jest jednym z podstawowych elementów elektronicznych.
                 Jego zadaniem jest hamowanie przepływu prądu
                 i obniżanie napięcia w obwodzie elektrycznym. Jego zasadnicza
                 część jest zbudowana z materiału o małej przewodności
@@ -55,9 +63,9 @@
             </p>
         </article>
 
-        <article class="action" id="action">
-            <h4>Działanie</h4>
-            <p>Hamowanie przepływu prądu i obniżanie napięcia przez
+        <article class=" article" id="action">
+            <h4 class="article__header">Działanie</h4>
+            <p class="article__paragraph">Hamowanie przepływu prądu i obniżanie napięcia przez
                 rezystor wiąże się ze zamianą energii elektrycznej na cieplną.
                 W nowoczesnych układach elektronicznych przemiana
                 jednej energii w drugą zachodzi z mocą rzadko przekraczającą
@@ -90,143 +98,143 @@
         </article>
 
 
-        <article class="ExampleTable" id="ExampleTable">
-            <h4>Przykład oznaczania rezystorów</h4>
+        <article class=" article" id="ExampleTable">
+            <h4 class="article__header">Przykład oznaczania rezystorów</h4>
+        </article>
+        <table class="table">
+            <caption class="table__captionTable">
+                Tabela oznaczenie kodów paskowych rezystorów
+            </caption>
 
-            <table class="table">
-                <caption class="captionTable">
-                    Tabela oznaczenie kodów paskowych rezystorów
-                </caption>
+
+            <tr class="table__tableRow">
+                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Kolor</th>
+                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Cyfra</th>
+                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Mnożnik</th>
+                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Tolerancja</th>
+                <th class="table__tableCell table__tableCell--tableHeader" scope="col">TWR</th>
+
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellSilver table__tableCell--tableHeader" scope="row">srebny</th>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">10<SUP>-2</SUP></td>
+                <td class="table__tableCell">10%</td>
+                <td class="table__tableCell">-</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellGold table__tableCell--tableHeader" scope="row">złoty</th>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">10<SUP>-1</SUP></td>
+                <td class="table__tableCell">5%</td>
+                <td class="table__tableCell">-</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellBlack table__tableCell--tableHeader" scope="row" style="color: #FFFFFF">
+                    czarny</th>
+                <td class="table__tableCell">0</td>
+                <td class="table__tableCell">1</td>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">250ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellBrown table__tableCell--tableHeader" scope="row">brązowy</th>
+                <td class="table__tableCell">1</td>
+                <td class="table__tableCell">10</td>
+                <td class="table__tableCell">1%</td>
+                <td class="table__tableCell">100ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellRed table__tableCell--tableHeader" scope="row">czerwony</th>
+                <td class="table__tableCell">2</td>
+                <td class="table__tableCell">10 <SUP>2</SUP></td>
+                <td class="table__tableCell">2%</td>
+                <td class="table__tableCell">50ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellOrange table__tableCell--tableHeader" scope="row">pomarańczowy</th>
+                <td class="table__tableCell">3</td>
+                <td class="table__tableCell">10 <SUP>3</SUP></td>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">15ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellYellow table__tableCell--tableHeader" scope="row">żółty</th>
+                <td class="table__tableCell">4</td>
+                <td class="table__tableCell">10 <SUP>4</SUP></td>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">25ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellGreen table__tableCell--tableHeader" scope="row">zielony</th>
+                <td class="table__tableCell">5</td>
+                <td class="table__tableCell">10 <SUP>5</SUP></td>
+                <td class="table__tableCell">0,5%</td>
+                <td class="table__tableCell">20ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellBlue table__tableCell--tableHeader" scope="row">niebieski</th>
+                <td class="table__tableCell">6</td>
+                <td class="table__tableCell">10 <SUP>6</SUP></td>
+                <td class="table__tableCell">0,25%</td>
+                <td class="table__tableCell">10ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellViolet table__tableCell--tableHeader" scope="row">fioletowy</th>
+                <td class="table__tableCell">7</td>
+                <td class="table__tableCell">10 <SUP>7</SUP></td>
+                <td class="table__tableCell">0,1%</td>
+                <td class="table__tableCell">5ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellGrey table__tableCell--tableHeader" scope="row">szary</th>
+                <td class="table__tableCell">8</td>
+                <td class="table__tableCell">10 <SUP>8</SUP></td>
+                <td class="table__tableCell">0,05%</td>
+                <td class="table__tableCell">1ppm</td>
+            </tr>
+
+            <tr class="tableRow__tableRow">
+                <th class="table__tableCellWhite table__tableCell--tableHeader" scope="row">biały</th>
+                <td class="table__tableCell">9</td>
+                <td class="table__tableCell">10 <SUP>9</SUP></td>
+                <td class="table__tableCell">-</td>
+                <td class="table__tableCell">-</td>
+            </tr>
+
+        </table>
 
 
-                <tr class="tableRow">
-                    <th class="tableCell tableHeader" scope="col">Kolor</th>
-                    <th class="tableCell tableHeader" scope="col">Cyfra</th>
-                    <th class="tableCell tableHeader" scope="col">Mnożnik</th>
-                    <th class="tableCell tableHeader" scope="col">Tolerancja</th>
-                    <th class="tableCell tableHeader" scope="col">TWR</th>
 
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellSilver tableHeader" scope="row">srebny</th>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">10<SUP>-2</SUP></td>
-                    <td class="tableCell">10%</td>
-                    <td class="tableCell">-</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellGold tableHeader" scope="row">złoty</th>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">10<SUP>-1</SUP></td>
-                    <td class="tableCell">5%</td>
-                    <td class="tableCell">-</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellBlack tableHeader" scope="row" style="color: #FFFFFF">czarny</th>
-                    <td class="tableCell">0</td>
-                    <td class="tableCell">1</td>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">250ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellBrown tableHeader" scope="row">brązowy</th>
-                    <td class="tableCell">1</td>
-                    <td class="tableCell">10</td>
-                    <td class="tableCell">1%</td>
-                    <td class="tableCell">100ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellRed tableHeader" scope="row">czerwony</th>
-                    <td class="tableCell">2</td>
-                    <td class="tableCell">10 <SUP>2</SUP></td>
-                    <td class="tableCell">2%</td>
-                    <td class="tableCell">50ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellOrange tableHeader" scope="row">pomarańczowy</th>
-                    <td class="tableCell">3</td>
-                    <td class="tableCell">10 <SUP>3</SUP></td>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">15ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellYellow tableHeader" scope="row">żółty</th>
-                    <td class="tableCell">4</td>
-                    <td class="tableCell">10 <SUP>4</SUP></td>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">25ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellGreen tableHeader" scope="row">zielony</th>
-                    <td class="tableCell">5</td>
-                    <td class="tableCell">10 <SUP>5</SUP></td>
-                    <td class="tableCell">0,5%</td>
-                    <td class="tableCell">20ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellBlue tableHeader" scope="row">niebieski</th>
-                    <td class="tableCell">6</td>
-                    <td class="tableCell">10 <SUP>6</SUP></td>
-                    <td class="tableCell">0,25%</td>
-                    <td class="tableCell">10ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellViolet tableHeader" scope="row">fioletowy</th>
-                    <td class="tableCell">7</td>
-                    <td class="tableCell">10 <SUP>7</SUP></td>
-                    <td class="tableCell">0,1%</td>
-                    <td class="tableCell">5ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellGrey tableHeader" scope="row">szary</th>
-                    <td class="tableCell">8</td>
-                    <td class="tableCell">10 <SUP>8</SUP></td>
-                    <td class="tableCell">0,05%</td>
-                    <td class="tableCell">1ppm</td>
-                </tr>
-
-                <tr class="tableRow">
-                    <th class="tableCellWhite tableHeader" scope="row">biały</th>
-                    <td class="tableCell">9</td>
-                    <td class="tableCell">10 <SUP>9</SUP></td>
-                    <td class="tableCell">-</td>
-                    <td class="tableCell">-</td>
-                </tr>
-
-            </table>
-
+        <article class=" article" id="ExamplePictureOne">
+            <h4 class="article__header">Cztery paski: 12 &ohm; 10% </h4>
+            <img class="article__image article__imageFourCode" src="src/rezkod44.png" alt="kod 4paski">
         </article>
 
-        <article class="ExamplePictureOne" id="ExamplePictureOne">
-            <h4>Cztery paski: 12 &ohm; 10% </h4>
-            <img src="src/rezkod44.png" alt="kod 4paski">
+        <article class=" article" id="ExamplePictureTwo">
+            <h4 class="article__header">Sześć pasków: 120k &ohm; 1% 250ppm </h4>
+            <img class="article__image article__imageSixCode" src="src/rezkod66.png" alt="kod 6paski">
         </article>
+        <article class=" article" id="types">
 
-        <article class="ExamplePictureTwo" id="ExamplePictureTwo">
-            <h4>Sześć pasków: 120k &ohm; 1% 250ppm </h4>
-            <img src="src/rezkod66.png" alt="kod 6paski">
-        </article>
-        <article class="types" id="types">
-
-            <h4>Rodzaje </h4>
+            <h4 class="article__header">Rodzaje </h4>
             <ul>
 
 
-                <li><strong>Rezystory osiowe</strong> mają wyprowadzenia po przeciwnych stronach
-                    zazwyczaj cylindrycznego korpusu. Rezystory radialne
-                    mają wyprowadzenia po jednej stronie korpusu. Te drugie
-                    są rzadko spotykane.</li>
+                <li><strong>Rezystory osiowe</strong> mają wyprowadzenia o przeciwnych
+                    stronach zazwyczaj cylindrycznego korpusu. Rezystory radialne mają wyprowadzenia po jednej
+                    stronie korpusu. Te drugie są rzadko spotykane. </li>
                 <li><strong>Rezystory precyzyjne</strong> charakteryzują się tolerancją nieprzekraczającą
                     ±1%.</li>
                 <li><strong>Rezystory ogólnego przeznaczenia</strong> są mniej precyzyjne i niezbyt
