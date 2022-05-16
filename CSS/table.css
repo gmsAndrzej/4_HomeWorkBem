@@ -8,7 +8,7 @@
     text-shadow: 1px 1px 4px #383636;
 }
 
-.table__tableCell {
+.table__cell {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -17,7 +17,7 @@
 }
 
 
-.table__tableCellSilver {
+.table__cellSilver {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -27,7 +27,7 @@
 }
 
 
-.table__tableCellGold {
+.table__cellGold {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -36,7 +36,7 @@
     background-color: #FFD700;
 }
 
-.table__tableCellBlack {
+.table__cellBlack {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -46,7 +46,7 @@
 
 }
 
-.table__tableCellBrown {
+.table__cellBrown {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -55,7 +55,7 @@
     background-color: #A52A2A;
 }
 
-.table__tableCellRed {
+.table__cellRed {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -64,7 +64,7 @@
     background-color: #FF0000;
 }
 
-.table__tableCellOrange {
+.table__cellOrange {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -73,7 +73,7 @@
     background-color: #FFA500;
 }
 
-.table__tableCellYellow {
+.table__cellYellow {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -82,7 +82,7 @@
     background-color: #FFFF00;
 }
 
-.table__tableCellGreen {
+.table__cellGreen {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -91,7 +91,7 @@
     background-color: #008000;
 }
 
-.table__tableCellBlue {
+.table__cellBlue {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -100,7 +100,7 @@
     background-color: #0000FF;
 }
 
-.table__tableCellViolet {
+.table__cellViolet {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -109,7 +109,7 @@
     background-color: #EE82EE;
 }
 
-.table__tableCellGrey {
+.table__cellGrey {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -118,7 +118,7 @@
     background-color: #808080;
 }
 
-.table__tableCellWhite {
+.table__cellWhite {
 
     border: 1px solid #ccc;
     padding: 5px;
@@ -133,19 +133,15 @@
     width: 100%;
     max-width: 940;
     box-shadow: 2px 2px 8px #ccc;
-
-
-
-
 }
 
-.table__tableRow:nth-child(even) {
+.table__row:nth-child(even) {
 
     background-color: #eee;
 
 }
 
-.table__tableRow:hover {
+.table__row:hover {
 
     background-color: #ddd;
 }

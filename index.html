@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="CSS/style.css" rel="stylesheet">
-    <link href="CSS/article.css" rel="stylesheet">
-    <link href="CSS/table.css" rel="stylesheet">
-    <link href="CSS/nav.css" rel="stylesheet">
-    <script defer src="JS/script.js"> </script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <script defer src="js/script.js"> </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-
-
 </head>
-
 <body class="body">
     <header class="header">
         <h1 class="header__description">Rezystor</h1>
     </header>
     <nav class="navigation">
-        <ul class="navigation__Ulist">
+        <ul class="navigation__ulist">
             <li class="navigation__list"><a class="navigation__link navigation__link--current  " href="">Strona
                     główna</a></li>
             <li class="navigation__list"><a class="navigation__link " href="#function">Funkcja</a></li>
@@ -35,10 +31,8 @@
             <li class="navigation__list"><a class="navigation__link " href="#types">Rodzaje</a></li>
         </ul>
     </nav>
-
     <main class="main">
-
-        <article class=" article" id="function">
+               <article class=" article" id="function">
 
             <h4 class="article__header">Funkcja</h4>
             <p class="article__paragraph">Rezystor jest jednym z podstawowych elementów elektronicznych.
@@ -59,11 +53,10 @@
                 ustalanie napięcia w określonym punkcie obwodu.
                 W ostatnim z wymienionych zastosowań często występują
                 dwa rezystory tworzące tzw. dzielnik napięcia.
-
             </p>
         </article>
 
-        <article class=" article" id="action">
+        <article class="article" id="action">
             <h4 class="article__header">Działanie</h4>
             <p class="article__paragraph">Hamowanie przepływu prądu i obniżanie napięcia przez
                 rezystor wiąże się ze zamianą energii elektrycznej na cieplną.
@@ -92,13 +85,11 @@
                 płynącego przez niego prądu.
                 Te same zależności obowiązują dla prądu przemiennego,
                 choć ich interpretacja jest nieco bardziej subtelna.
-
-            </p>
+           </p>
 
         </article>
 
-
-        <article class=" article" id="ExampleTable">
+        <article class="article" id="ExampleTable">
             <h4 class="article__header">Przykład oznaczania rezystorów</h4>
         </article>
         <table class="table">
@@ -106,158 +97,135 @@
                 Tabela oznaczenie kodów paskowych rezystorów
             </caption>
 
-
-            <tr class="table__tableRow">
-                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Kolor</th>
-                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Cyfra</th>
-                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Mnożnik</th>
-                <th class="table__tableCell table__tableCell--tableHeader" scope="col">Tolerancja</th>
-                <th class="table__tableCell table__tableCell--tableHeader" scope="col">TWR</th>
-
+            <tr class="table__row">
+                <th class="table__cell table__cell--header" scope="col">Kolor</th>
+                <th class="table__cell table__cell--header" scope="col">Cyfra</th>
+                <th class="table__cell table__cell--header" scope="col">Mnożnik</th>
+                <th class="table__cell table__cell--header" scope="col">Tolerancja</th>
+                <th class="table__cell table__cell--header" scope="col">TWR</th>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellSilver table__tableCell--tableHeader" scope="row">srebny</th>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">10<SUP>-2</SUP></td>
-                <td class="table__tableCell">10%</td>
-                <td class="table__tableCell">-</td>
+            <tr class="table__row">
+                <th class="table__cellSilver " scope="row">srebny</th>
+                <td class="table__cell">-</td>
+                <td class="table__cell">10<SUP>-2</SUP></td>
+                <td class="table__cell">10%</td>
+                <td class="table__cell">-</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellGold table__tableCell--tableHeader" scope="row">złoty</th>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">10<SUP>-1</SUP></td>
-                <td class="table__tableCell">5%</td>
-                <td class="table__tableCell">-</td>
+            <tr class="table__row">
+                <th class="table__cellGold " scope="row">złoty</th>
+                <td class="table__cell">-</td>
+                <td class="table__cell">10<SUP>-1</SUP></td>
+                <td class="table__cell">5%</td>
+                <td class="table__cell">-</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellBlack table__tableCell--tableHeader" scope="row" style="color: #FFFFFF">
+            <tr class="table__row">
+                <th class="table__cellBlack " scope="row" style="color: #FFFFFF">
                     czarny</th>
-                <td class="table__tableCell">0</td>
-                <td class="table__tableCell">1</td>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">250ppm</td>
+                <td class="table__cell">0</td>
+                <td class="table__cell">1</td>
+                <td class="table__cell">-</td>
+                <td class="table__cell">250ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellBrown table__tableCell--tableHeader" scope="row">brązowy</th>
-                <td class="table__tableCell">1</td>
-                <td class="table__tableCell">10</td>
-                <td class="table__tableCell">1%</td>
-                <td class="table__tableCell">100ppm</td>
+            <tr class="table__row">
+                <th class="table__cellBrown " scope="row">brązowy</th>
+                <td class="table__cell">1</td>
+                <td class="table__cell">10</td>
+                <td class="table__cell">1%</td>
+                <td class="table__cell">100ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellRed table__tableCell--tableHeader" scope="row">czerwony</th>
-                <td class="table__tableCell">2</td>
-                <td class="table__tableCell">10 <SUP>2</SUP></td>
-                <td class="table__tableCell">2%</td>
-                <td class="table__tableCell">50ppm</td>
+           <tr class="table__row">
+                <th class="table__cellRed " scope="row">czerwony</th>
+                <td class="table__cell">2</td>
+                <td class="table__cell">10 <SUP>2</SUP></td>
+                <td class="table__cell">2%</td>
+                <td class="table__cell">50ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellOrange table__tableCell--tableHeader" scope="row">pomarańczowy</th>
-                <td class="table__tableCell">3</td>
-                <td class="table__tableCell">10 <SUP>3</SUP></td>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">15ppm</td>
+            <tr class="table__row">
+                <th class="table__cellOrange " scope="row">pomarańczowy</th>
+                <td class="table__cell">3</td>
+                <td class="table__cell">10 <SUP>3</SUP></td>
+                <td class="table__cell">-</td>
+                <td class="table__cell">15ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellYellow table__tableCell--tableHeader" scope="row">żółty</th>
-                <td class="table__tableCell">4</td>
-                <td class="table__tableCell">10 <SUP>4</SUP></td>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">25ppm</td>
+            <tr class="table__row">
+                <th class="table__cellYellow " scope="row">żółty</th>
+                <td class="table__cell">4</td>
+                <td class="table__cell">10 <SUP>4</SUP></td>
+                <td class="table__cell">-</td>
+                <td class="table__cell">25ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellGreen table__tableCell--tableHeader" scope="row">zielony</th>
-                <td class="table__tableCell">5</td>
-                <td class="table__tableCell">10 <SUP>5</SUP></td>
-                <td class="table__tableCell">0,5%</td>
-                <td class="table__tableCell">20ppm</td>
+            <tr class="table__row">
+                <th class="table__cellGreen " scope="row">zielony</th>
+                <td class="table__cell">5</td>
+                <td class="table__cell">10 <SUP>5</SUP></td>
+                <td class="table__cell">0,5%</td>
+                <td class="table__cell">20ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellBlue table__tableCell--tableHeader" scope="row">niebieski</th>
-                <td class="table__tableCell">6</td>
-                <td class="table__tableCell">10 <SUP>6</SUP></td>
-                <td class="table__tableCell">0,25%</td>
-                <td class="table__tableCell">10ppm</td>
+            <tr class="table__row">
+                <th class="table__cellBlue " scope="row">niebieski</th>
+                <td class="table__cell">6</td>
+                <td class="table__cell">10 <SUP>6</SUP></td>
+                <td class="table__cell">0,25%</td>
+                <td class="table__cell">10ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellViolet table__tableCell--tableHeader" scope="row">fioletowy</th>
-                <td class="table__tableCell">7</td>
-                <td class="table__tableCell">10 <SUP>7</SUP></td>
-                <td class="table__tableCell">0,1%</td>
-                <td class="table__tableCell">5ppm</td>
+            <tr class="table__row">
+                <th class="table__cellViolet " scope="row">fioletowy</th>
+                <td class="table__cell">7</td>
+                <td class="table__cell">10 <SUP>7</SUP></td>
+                <td class="table__cell">0,1%</td>
+                <td class="table__cell">5ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellGrey table__tableCell--tableHeader" scope="row">szary</th>
-                <td class="table__tableCell">8</td>
-                <td class="table__tableCell">10 <SUP>8</SUP></td>
-                <td class="table__tableCell">0,05%</td>
-                <td class="table__tableCell">1ppm</td>
+            <tr class="table__row">
+                <th class="table__cellGrey" scope="row">szary</th>
+                <td class="table__cell">8</td>
+                <td class="table__cell">10 <SUP>8</SUP></td>
+                <td class="table__cell">0,05%</td>
+                <td class="table__cell">1ppm</td>
             </tr>
-
-            <tr class="table__tableRow">
-                <th class="table__tableCellWhite table__tableCell--tableHeader" scope="row">biały</th>
-                <td class="table__tableCell">9</td>
-                <td class="table__tableCell">10 <SUP>9</SUP></td>
-                <td class="table__tableCell">-</td>
-                <td class="table__tableCell">-</td>
+            <tr class="table__row">
+                <th class="table__cellWhite " scope="row">biały</th>
+                <td class="table__cell">9</td>
+                <td class="table__cell">10 <SUP>9</SUP></td>
+                <td class="table__cell">-</td>
+                <td class="table__cell">-</td>
             </tr>
-
         </table>
 
-
-
-        <article class=" article__imageFourCode" id="ExamplePictureOne">
+        <article class="article__imageFourCode" id="ExamplePictureOne">
             <h4 class="article__header">Cztery paski: 12 &ohm; 10% </h4>
             <img src="src/rezkod44.png" alt="kod 4paski">
         </article>
 
-        <article class=" article__imageSixCode" id="ExamplePictureTwo">
+        <article class="article__imageSixCode" id="ExamplePictureTwo">
             <h4 class="article__header">Sześć pasków: 120k &ohm; 1% 250ppm </h4>
             <img src="src/rezkod66.png" alt="kod 6paski">
         </article>
-        <article class=" article article__types " id="types">
+        <article class="article article__types  js-article__types" id="types">
 
-            <h4 class="article__header">Rodzaje </h4>
+            <h4 class="article__header  js-article__header">Rodzaje </h4>
             <ul>
-
-
-                <li><strong class="article__strong">Rezystory osiowe</strong> mają wyprowadzenia o przeciwnych
+                <li><strong class="article__strong ">Rezystory osiowe</strong> mają wyprowadzenia o przeciwnych
                     stronach zazwyczaj cylindrycznego korpusu. Rezystory radialne mają wyprowadzenia po jednej
                     stronie korpusu. Te drugie są rzadko spotykane. </li>
-                <li><strong>Rezystory precyzyjne</strong> charakteryzują się tolerancją nieprzekraczającą
+                <li><strong class="article__strong ">Rezystory precyzyjne</strong> charakteryzują się tolerancją nieprzekraczającą
                     ±1%.</li>
-                <li><strong>Rezystory ogólnego przeznaczenia</strong> są mniej precyzyjne i niezbyt
+                <li><strong class="article__strong">Rezystory ogólnego przeznaczenia</strong> są mniej precyzyjne i niezbyt
                     stabilne.</li>
-
-
-                <li><strong class="article__strong">Rezystory mocy</strong> są stosowane głównie w zasilaczach i
+                <li><strong class="article__strong ">Rezystory mocy</strong> są stosowane głównie w zasilaczach i
                     wzmacniaczach,
                     a ich moc znamionowa wynosi co najmniej 1 W.
                     Są stosunkowo duże i często wymagają zamontowania radiatora
                     lub wentylatora.</li>
-                <li><strong class="article__strong">Rezystory drutowe</strong> są stosowane w układach wydzielających
+                <li><strong class="article__strong ">Rezystory drutowe</strong> są stosowane w układach wydzielających
                     dużo ciepła. Najczęściej są zbudowane z dielektrycznego
                     korpusu (rdzenia), który może być cylindryczny lub płaski,
                     i nawiniętego na nim drutu oporowego. Drut jest zazwyczaj
                     wykonany ze stopu niklowo-chromowego (zwanego nichromem)
                     i ma powłokę ochronną.</li>
-                <li><strong class="article__strong"> Rezystory grubowarstwowe</strong> mają postać płytek lub
+                <li><strong class="article__strong "> Rezystory grubowarstwowe</strong> mają postać płytek lub
                     prostopadłościennych
                     kostek.</li>
-
-
-                <li><strong class="article__strong"> Rezystory montowane powierzchniowo (SMD)</strong> zazwyczaj
+                <li><strong class="article__strong "> Rezystory montowane powierzchniowo (SMD)</strong> zazwyczaj
                     składają się z nadruku oporowego naniesionego na płytkę
                     ceramiczną o dużej zawartości tlenku aluminium. Często ich
                     długość wynosi 6 mm (seria rozmiarowa o numerze 2512).
@@ -265,18 +233,13 @@
                     lutowiem roztapianym podczas montażu rezystora na płytce
                     drukowanej. Górna powierzchnia jest zabezpieczana cienką
                     warstwą żywicy epoksydowej.</li>
-
             </ul>
-
-
         </article>
-
     </main>
     <footer>
         &copy; Gms 2022
-        <button class="body__button">Włącz ciemnny motyw</button>
+        <button class="body__button js-body__button">Włącz ciemnny motyw</button>
     </footer>
-
 </body>
 
 </html>

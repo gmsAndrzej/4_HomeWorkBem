@@ -8,13 +8,10 @@
     padding-bottom: 10px;
     line-height: 1.5;
     clear: both;
-
 }
 
 .article__header {
-
-    color: rgb(3, 41, 41);
-    margin: 0px 0px 10px 0px;
+    margin-bottom: 10px;
     color: black;
     font-size: 18px;
     text-shadow: 1px 1px 4px #383636;
@@ -22,21 +19,15 @@
 }
 
 .article__paragraph {
-
     color: rgb(82, 78, 78);
-
-
 }
-
 
 .article__imageFourCode {
     margin-left: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
-
     float: left;
     text-align: center;
-
 }
 
 .article__imageSixCode {
@@ -45,12 +36,9 @@
     margin-right: 50px;
     margin-bottom: 20px;
     text-align: center;
-
-
 }
 
-.article__strong {
-
-    color: rgb(6, 6, 94);
+.article__strong{
+    color: rgb(7, 7, 136);
 
 }

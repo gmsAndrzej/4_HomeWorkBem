@@ -9,12 +9,9 @@ html {
     box-sizing: inherit;
 }
 
-
-
 header, section, footer, aside, nav, article {
     display: block;
 }
-
 
 .body {
 
@@ -33,7 +30,6 @@ header, section, footer, aside, nav, article {
     color: #eee;
     background: #222;
 
-
 }
 
 .body__button {
@@ -46,7 +42,7 @@ header, section, footer, aside, nav, article {
     padding: 20px;
     max-width: 940px;
     width: 100%;
-    margin: 0px auto 0px auto;
+    margin: 0 auto ;
     border-left: 1px solid white;
     border-right: 1px solid white;
     background-color: #efefef;
@@ -55,7 +51,7 @@ header, section, footer, aside, nav, article {
 .header {
 
     padding-right: 20px;
-    margin: 0px auto 0px auto;
+    margin: 0 auto ;
     max-width: 940px;
     width: 100%;
     height: 160px;
@@ -70,16 +66,15 @@ header, section, footer, aside, nav, article {
     font-size: 50px;
     color: #eee;
     margin: 50px 50px 50px 300px;
-    padding: 0 auto 0 auto;
+    padding: 0 auto ;
     text-shadow: 5px 5px 30px #383636;
 
 }
 
-
 footer {
 
     clear: both;
-    margin: 0px auto 0px auto;
+    margin: 0 auto ;
     max-width: 940px;
     width: 100%;
     font-size: 80%;
